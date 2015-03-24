@@ -57,7 +57,7 @@ p{
 #search_text{
     height: 40px;
     width: 700px;
-    margin-left: 10px;  //////////////////////////////////////////////////////////////////////////
+    margin-left: 10px; 
 }
 
 #header{
@@ -122,7 +122,7 @@ p{
 
 #right_q
 {
-    margin-left: 760px; /* Change this to whatever the width of your left column is*/
+    margin-left: 760px; 
 }
 
 .clear_q
