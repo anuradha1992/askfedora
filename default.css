@@ -68,7 +68,8 @@ p{
 
 #header_content{
     padding: 5px;
-
+    font-size: 16px;
+    
 }
 
 #content_header{
@@ -165,5 +166,11 @@ p{
 .clear
 {
     clear: both;
+}
+
+#user{
+    float: right;
+    margin-right: 150px;
+    margin-top: 5px;
 }
 

@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        
         <title>Ask Fedora</title>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -227,6 +227,7 @@
         <div id="header" >
             <div id="header_content">
                 <font class="bold_text" id="ask">ASK</font> <img src="images/images.png" alt="fedora" height="30" width="30">
+                <a href="user.php"><font class="bold_text" id="user">anuradhaw</font></a>
             </div>
         </div>
 
@@ -261,9 +262,6 @@
         </div>
 
         <div id="body_content">
-
-
-
             <div id="container">
                 <div id="left">
                     <font class="bold_text">Tagged</font>&nbsp;&nbsp;<span class="label label-warning">Server</span>
