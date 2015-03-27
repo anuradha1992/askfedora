@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="user.css">
+        <link rel="stylesheet" type="text/css" href="user.css" media="screen and (max-width: 500px)">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
 
@@ -26,49 +27,61 @@
 
         <div id="header">
             <div id="header_content">
-
-                <!--                <button type="button" class="btn btn-default" id="hamburger">
-                                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-                                </button>-->
-                
-                <span class="glyphicon glyphicon-tasks  gi-10x" aria-hidden="true" data-toggle="tooltip" data-original-title="Questions"></span>
-                
-
-                <font class="bold_text" id="ask">ASK</font> 
-                <img src="images/images.png" id="logo" alt="fedora" height="30" width="30">
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div>
+                                    <span class="glyphicon glyphicon-tasks  gi-10x" aria-hidden="true" data-toggle="tooltip" data-original-title="Questions"></span>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="ask_top" align="center"">
+                                    <font class="bold_text" id="ask">ASK</font> 
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <img src="images/images.png" id="logo" alt="fedora" height="30" width="30">
+                                </div>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
 
 
-        <nav class="navbar navbar-default" id="search_nav_bar">
-            <form id="form_search">
-                <div>
-                    <table>
-                        <tr>
-                            <td width="74%">
-                                <input type="text" id = "search_text" placeholder="Search or ask a question">
-                            </td>
-                            <td width="26%">
-                                <button type="submit" class="btn btn-default" id = "ask_btn">ASK</button>
-                            </td>
-                        </tr>
-                    </table>
+        <nav class="navbar navbar-default" id="search_nav_bar" >
+            <div align="center">
+                <form id="form_search">
+                    <div>
+                        <table>
+                            <tr>
+                                <td width="74%">
+                                    <input type="text" id = "search_text" placeholder="Search or ask a question">
+                                </td>
+                                <td width="26%">
+                                    <button type="submit" class="btn btn-default" id = "ask_btn">ASK</button>
+                                </td>
+                            </tr>
+                        </table>
 
-                </div>
+                    </div>
 
-            </form>
+                </form>
+            </div>
         </nav>   
 
         <div id="content_header">
             <div id="content">
-                
+
             </div>
         </div>
-        
+
         <div id="username_panel">
-        <font class="bold_text" id="username">anuradhaw's profile - overview</font>
+            <font class="bold_text" id="username">anuradhaw's profile - overview</font>
         </div>
-        
+
         <div id="profile">
             <div class="profile_pane">
                 <div id="profile_image">
@@ -110,7 +123,7 @@
         </div>
 
         <div id="statistics_panel" align="center" >
-            
+
             <table>
                 <tr>
                     <td align="center" class="stats">
@@ -147,7 +160,7 @@
                     </td>
                 </tr>
             </table>
-            
+
         </div>
 
     </body>

@@ -227,7 +227,8 @@
         <div id="header" >
             <div id="header_content">
                 <font class="bold_text" id="ask">ASK</font> <img src="images/images.png" alt="fedora" height="30" width="30">
-                <a href="user.php"><font class="bold_text" id="user">anuradhaw</font></a>
+                <a href="responsive_main_page.html"><font class="bold_text" id="user">responsive main page</font></a>&nbsp;
+                <a href="user.php"><font class="bold_text" id="user">mobile view of user page</font></a>
             </div>
         </div>
 
@@ -235,7 +236,6 @@
         <nav class="navbar navbar-default" id="search_nav_bar">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
                     <form class="navbar-form navbar-left" role="search" id="form_search">
                         <button type="button" class="btn btn-default" id="hamburger">
                             <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
@@ -246,8 +246,8 @@
                         <button type="submit" class="btn btn-default" id = "ask_btn">ASK</button>
                     </form>
 
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
+                </div>
+            </div>
         </nav>    
 
         <div id="content_header">

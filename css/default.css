@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#search_input{
+    width: 350px;
+}
+
+#header{
+    margin-top: 50px;
+    height: 100px;
+    padding: 22px;
+    background-image: url("../images/header.png");
+}
+
+.btn-default{
+    background: green;
+}
+
+#username{
+    margin-top: 10px;
+}
+
+.bold_text{
+    font-weight: bold;
+    color: #787878;
+}
+
+.circle {
+        margin-top: 5px;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px; 
+        background: red;
+        float: left;
+}
+
+
+td{
+    align: left;
+    padding-left: 20px;
+}
+
+.footer container td{
+    align: left;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+  height: 50px;
+  background-color: #B8B8B8;
+}
+
+#hearder_bar{
+    height: 15px;
+    padding: 13px;
+}
+
+#questions{
+    float: left;
+    width: 200px;
+    margin-top: 15px;
+}
+
+
+#sort_by{
+    margin-top: 15px;
+    padding-right: 10px;
+}
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+}
