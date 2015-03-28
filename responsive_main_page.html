@@ -26,25 +26,23 @@
 
         <div class = "container-fluid" id="main">
 
-            <div class="navbar navbar-fixed-top">
+            <div class="navbar navbar-default">
                 <div class="container">
-                    
+
                     <div class="navbar-toggle" data-target=".image_logo" data-toggle="collapse" style="float: left">
                         <span class="icon-bar"></span>
                     </div>
-                    
+
                     <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button" style="float: left">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    
-                  
-                    <a class="navbar-brand" href="#">
+
+
+                    <a class="navbar-brand">
                         ASK
                     </a>
-                    
-                    
                     <div class="nav-collapse collapse navbar-responsive-collapse">
                         <ul class="nav navar-nav pull-right">
                             <li>
@@ -84,88 +82,281 @@
 
             <header id="header">
                 <div align="center">
-                        <form class="navbar-form">
-                            <input type="text" class="form-control" id="search_input" placeholder="Search or ask a question">
-                            <button type="submit" class="btn btn-default">ASK</button>
-                        </form>
-                    
-                </div>
-            </header><!-- end navbar -->
+                    <form class="navbar-form">
+<!--                        <div class="hamburger_menu">
+                            <img src="images/hamburger.png" alt="ham" height="20" width="20">
+                        </div>-->
+                        <input type="text" class="form-control" id="search_input" placeholder="Search or ask a question">
+                        <button type="submit" class="btn btn-default" id="ask_btn">ASK</button>
+                    </form>
 
-            <nav class="navbar navbar-default">
+                </div>
+            </header><!-- end header -->
+
+            <div id="content_header">
                 <div class="container">
-<!--                    <div class="nav-collapse" id="questions">
-                        <font class="bold_text">10,799 questions</font>
-                    </div>-->
-                    <div id="menu">
-                        <ul class="nav navbar-nav"  data-no-collapse="true">
-                            <li>
-                                <div id="sort_by">
-                                    <font class="bold_text">SORT BY</font>
+                    <div class="row">
+
+                        <div class="col-3">
+                            <div class="container">
+                                <div class="visible-lg">
+                                    <font class="bold_text">10,799 questions</font>
                                 </div>
-                            </li>
-                            <li>
-                                <a href="#">Date</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activity<strong class="caret"></strong></a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">Activity 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Activity 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Activity 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Answers</a>
-                            </li>
-                            <li>
-                                <a href="#">Votes</a>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <font class="bold_text top_links">SORT BY</font>
+                                        <a href="#" class="top_links">Date</a>
+                                        <a href="#" class="top_links">Activity</a>
+                                        <a href="#" class="top_links">Answers</a>
+                                        <a href="#" >Votes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
-
-            <div class="row">
             </div>
+
+
+            <div class= "container" id="body_pane">
+                <div class="row" >
+                    <div class="col-sm-9">
+
+                        <div id="tagged" class="hidden-sm">
+                            <font class="bold_text">Tagged</font>&nbsp;&nbsp;<span class="label label-warning">Server</span>
+                        </div>
+
+                        <div class="container">
+                            <div class="row question_panes" style="margin-left: 0.4%; margin-right: 0.4%">
+                                <div class="col-xs-2 col-sm-2 col-md-2 hidden-lg" align="center" >
+                                    <div class="left_q">
+                                        <font class="statistics">7</font><br>
+                                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" data-toggle="tooltip" data-original-title="Likes"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9" >
+
+                                    <div class="right_q">
+                                        Why does Barq's taste like sweetened Violini dfgdfgnfdkjg dfbgdfg etrhjghd?
+                                        <div class="tags">
+                                            <a href="#"><span class="label label-warning">server</span>&nbsp;&nbsp;</a>
+                                            <a href="#"><span class="label label-default">barq</span>&nbsp;&nbsp;</a>
+                                            <a href="#"><span class="label label-default">wololo</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-3 visible-lg" >
+                                    <div id="stats_pane" class="container">
+                                        <div class="row">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-4" align="center">
+                                                        <font class="statistics">33</font><br>
+                                                    </div>
+                                                    <div class="col-4" align="center">
+                                                        <font class="statistics">37</font><br>
+                                                    </div>
+                                                    <div class="col-4" align="center">
+                                                        <font class="statistics">15</font><br>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4" align="center">
+                                                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" data-toggle="tooltip" data-original-title="Likes"></span>
+                                                    </div>
+                                                    <div class="col-4" align="center">
+                                                        <span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true" data-toggle="tooltip" data-original-title="Views"></span>
+                                                    </div>
+                                                    <div class="col-4" align="center">
+                                                        <span class="glyphicon glyphicon-pencil" aria-hidden="true" data-toggle="tooltip" data-original-title="Answers"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div> 
+
+                        <div class="container">
+                            <div class="row question_panes" style="margin-left: 0.4%; margin-right: 0.4%">
+                                <div class="col-xs-2 col-sm-2 col-md-2 hidden-lg" align="center" >
+                                    <div class="left_q">
+                                        <font class="statistics">7</font><br>
+                                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" data-toggle="tooltip" data-original-title="Likes"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9" >
+
+                                    <div class="right_q">
+                                        Why does Barq's taste like sweetened Violini dfgdfgnfdkjg dfbgdfg etrhjghd why does Barq's taste like sweetened Violini dfgdfgnfdkjg dfbgdfg etrhjghd why does Barq's taste like sweetened Violini dfgdfgnfdkjg dfbgdfg etrhjghd why does Barq's taste 
+                                        <div class="tags">
+                                            <a href="#"><span class="label label-warning">server</span>&nbsp;&nbsp;</a>
+                                            <a href="#"><span class="label label-default">barq</span>&nbsp;&nbsp;</a>
+                                            <a href="#"><span class="label label-default">wololo</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-3 visible-lg">
+                                    <div id="stats_pane" class="container">
+                                        <div class="row">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-4" align="center">
+                                                        <font class="statistics">26</font><br>
+                                                    </div>
+                                                    <div class="col-4" align="center">
+                                                        <font class="statistics">17</font><br>
+                                                    </div>
+                                                    <div class="col-4" align="center">
+                                                        <font class="statistics">48</font><br>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4" align="center">
+                                                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" data-toggle="tooltip" data-original-title="Likes"></span>
+                                                    </div>
+                                                    <div class="col-4" align="center">
+                                                        <span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true" data-toggle="tooltip" data-original-title="Views"></span>
+                                                    </div>
+                                                    <div class="col-4" align="center">
+                                                        <span class="glyphicon glyphicon-pencil" aria-hidden="true" data-toggle="tooltip" data-original-title="Answers"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>   
+                        <div class="container">
+                            <div class="row question_panes" style="margin-left: 0.4%; margin-right: 0.4%">
+                                <div class="col-xs-2 col-sm-2 col-md-2 hidden-lg" align="center" >
+                                    <div class="left_q">
+                                        <font class="statistics">7</font><br>
+                                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" data-toggle="tooltip" data-original-title="Likes"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9" >
+
+                                    <div class="right_q">
+                                        Why does Barq's taste like sweetened Violini dfgdfgnfdkjg dfbgdfg etrhjghd?
+                                        <div class="tags">
+                                            <a href="#"><span class="label label-warning">server</span>&nbsp;&nbsp;</a>
+                                            <a href="#"><span class="label label-default">barq</span>&nbsp;&nbsp;</a>
+                                            <a href="#"><span class="label label-default">wololo</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-3 visible-lg" >
+                                    <div id="stats_pane" class="container">
+                                        <div class="row">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-4" align="center">
+                                                        <font class="statistics">12</font><br>
+                                                    </div>
+                                                    <div class="col-4" align="center">
+                                                        <font class="statistics">17</font><br>
+                                                    </div>
+                                                    <div class="col-4" align="center">
+                                                        <font class="statistics">19</font><br>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4" align="center">
+                                                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" data-toggle="tooltip" data-original-title="Likes"></span>
+                                                    </div>
+                                                    <div class="col-4" align="center">
+                                                        <span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true" data-toggle="tooltip" data-original-title="Views"></span>
+                                                    </div>
+                                                    <div class="col-4" align="center">
+                                                        <span class="glyphicon glyphicon-pencil" aria-hidden="true" data-toggle="tooltip" data-original-title="Answers"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>              
+
+                    </div>
+
+                    <div class="col-3">
+                        <div class="hidden-sm" style="float: right" id="right_pane">
+                            <div id = "sticky_questions">
+                                <p><font class="bold_text">Sticky Questions</font></p>
+                                <p><a href="#"><font class = "body_text">Why does one ever decide to drink Barq's?</font></a></p>
+                                <p><a href="#"><font class = "body_text">Who decided to produce Barq's?</font></a></p>
+                                <p><a href="#"><font class = "body_text">Is Barq's just a root beer for lame people?</font></a></p>
+                                <p><a href="#"><font class = "body_text">What happens if you ignite a can of pressured soda?</font></a></p>
+                                <p><a href="#"><font class = "body_text">more...</font></a></p>
+                            </div>
+                            <div id = "tags">
+
+                                <font class="bold_text">Tags</font><br><br>
+                                <p>
+                                    <span class="label label-warning">server</span>&nbsp;&nbsp;<span class="label label-default">barq</span>
+                                    <br>
+                                    <span class="label label-default">Wololo</span>&nbsp;&nbsp;<span class="label label-default">Panda7</span>
+                                    <br>
+                                    <span class="label label-default">server</span>&nbsp;&nbsp;<span class="label label-default">barq</span>
+                                    <br>
+                                    <span class="label label-default">Wololo</span>&nbsp;&nbsp;<span class="label label-default">Panda7</span>
+                                    <br>
+                                    <span class="label label-success">Workstation</span>
+                                    <br>
+                                    <span class="label label-primary">cloud</span>&nbsp;&nbsp;<span class="label label-default">Barq</span>
+                                    <br>
+                                    <span class="label label-default">Barq</span>
+                                    <br>
+                                </p>
+                            </div>
+                        </div> <!-- end right pane -->
+                    </div>
+
+                </div><!-- end row -->
+            </div><!-- end body_pane -->
 
         </div><!-- end container -->
 
-        <footer class="footer">
+        <div id="footer">
             <div class="container">
-                <table>
-                    <tr>
-                        <td>
-                            <a><font class="bold_text">Tags</font></a>
-                        </td>
-                        <td>
-                            <div>
-                                <a><font class="bold_text">People</font></a>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <a><font class="bold_text">Badges</font></a>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <a><font class="bold_text">About</font></a>
-                            </div>
-                        </td>
-                        <td>
-                            <a><font class="bold_text">FAQ</font></a>
-                        </td>
-                    </tr>
-                </table>
+
+                <div class="row">
+                    <div class="col-3" align="center"><a href="#"><font class="bold_text footer_tags">Tags</font></a></div>
+                    <div class="col-3" align="center"><a href="#"><font class="bold_text footer_tags">People</font></a></div>
+                    <div class="col-3" align="center"><a href="#"><font class="bold_text footer_tags">Badges</font></a></div>
+                    <div class="col-3" align="center"><a href="#"><font class="bold_text footer_tags">About</font></a></div>
+                </div>
             </div>
-        </footer>
+        </div>
 
         <script src="http://code.jquery.com/jquery.js"></script>
 
