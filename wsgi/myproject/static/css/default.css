@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#header{
+    height: 100px;
+    padding: 22px;
+    background-image: url("../images/header.png");
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+#body_pane{
+    margin-top: 20px;
+}
+
+.btn-default{
+    background: green;
+}
+
+#username{
+    margin-top: 10px;
+}
+
+.bold_text{
+    font-weight: bold;
+    color: #787878;
+}
+
+.circle {
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px; 
+    background: red;
+    float: left;
+}
+
+
+td{
+    align: left;
+    padding-left: 20px;
+}
+
+.footer container td{
+    align: left;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    background-color: #B8B8B8;
+}
+
+#hearder_bar{
+    height: 15px;
+    padding: 13px;
+}
+
+#questions{
+    float: left;
+    width: 200px;
+    margin-top: 15px;
+}
+
+
+
+.top_links{
+    margin-right: 9%;
+}
+
+#search_input{
+    width: 70%;
+}
+
+#content_header{
+    height: 35px;
+    background: #f2f1ef;
+    padding: 8px;
+}
+
+.hamburger_menu{
+    float: left;
+}
+
+#left_q
+{
+    float: left;
+    width: 20%;
+}
+
+#right_q
+{
+    float: right;
+    width: 80%;
+}
+
+
+.tags{
+    margin-top: 10px;
+}
+
+
+
+a:link {
+    text-decoration:none;
+}
+a:visited {
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:none;
+}
+a:active {
+    text-decoration:none;
+}
+
+.statistics{
+    margin-top: 0px;
+    font-size: 35px;
+}
+
+.question_panes{
+    background: #f2f1ef;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 25px;
+    -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;
+    -webkit-box-shadow: 0px 10px 1px 1px rgba(181, 181, 181, 0.75);
+    -moz-box-shadow:    0px 10px 1px 1px rgba(181, 181, 181, 0.75);
+    box-shadow:         0px 10px 1px 1px rgba(181, 181, 181, 0.75);
+}
+
+
+#tagged{
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#footer{
+    margin-top: 40px;
+    background: #B8B8B8;
+    height: 40px;
+    margin-bottom: 0px;
+    padding: 9px;
+}
+
+.footer_tags{
+    font-size: 18px;
+}
+
+#ask_btn{
+    font-size: 16px;
+    width: 80px;
+    margin-left: 1%;
+}
+
+@media (max-width: 768px) {
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+
+
+
