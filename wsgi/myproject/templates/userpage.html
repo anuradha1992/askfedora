@@ -1,0 +1,292 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+
+{% block title %}
+    AskFedora Userpage
+{% endblock %}
+
+{% block cssfiles %}
+<link href="{% static "css/userpage.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+            <div class="container">
+
+                <div class = "row">
+                    <div id="username_panel">
+                        <font class="bold_text title" id="username">Happy Panda's profile - overview</font>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class = "row">
+                    <div class="col-sm-7">
+                        <div class="container-fluid profile_pane">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class = "row">
+                                        <div class="col-12" align="center">
+                                            <img src="{% static "images/panda.png" %}" class="img-circle" alt="panda" id="profile_photo"></br>
+                                            <font class="bold_text" id="change_picture"><a href="#">change picture</a></font></br>
+                                            <font class="statistics_2">6</font></br>
+                                            <font class="bold_text">karma</font></br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div id="profile_data">
+                                        <font class="bold_text">Registered User</font><br>
+                                        <font class="normal">member since</font>
+                                        <br>
+                                        <font class="small_bold_text">6 hours ago</font>
+                                        <br>
+                                        <font class="normal">last seen</font>
+                                        <br>
+                                        <font class="small_bold_text">8 mins ago</font>
+                                        <br>
+                                        <font class="normal">Auto-tweeting is off</font>
+                                        <br>
+                                        <button type="submit" class="btn btn-default" id = "tweet"><font class="normal">Start Tweeting</font></button>
+                                        <br>
+                                        <font class="normal">Today's unused votes</font>&nbsp;&nbsp;
+                                        <font class="statistics">30</font><br>
+                                        <br>
+                                        <font class="small_bold_text"><a href="#">update profile</a> | <a href="#">manage login methods</a></font>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-5">
+                        <div class="hidden-sm">
+                            <font class="normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac fringilla nulla, sit amet consequat eros. Pellentesque pharetra blandit commodo. Phasellus massa nisl, feugiat ac bibendum et, dictum id ipsum. Quisque sit amet accumsan tortor. </font>
+                            <br>
+                            <div class="container-fluid" id="stat_right_pane">
+                                <div class="row">
+                                    
+                                    <div class="col-2">
+                                        <font class="statistics_2">2</font>
+                                    </div>
+                                    <div class="col-2">
+                                        <font class="statistics_2">4</font>
+                                    </div>
+                                    <div class="col-2">
+                                        <font class="statistics_2">2</font>
+                                    </div>
+                                    <div class="col-2" >
+                                        <font class="statistics_2">6</font>
+                                    </div>
+                                    <div class="col-2">
+                                        <font class="statistics_2">4</font>
+                                    </div>
+                                    <div class="col-2">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    
+                                    <div class="col-2">
+                                        <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-original-title="Questions"></span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span class="glyphicon glyphicon-ok-sign" aria-hidden="true" data-toggle="tooltip" data-original-title="Answers"></span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" data-toggle="tooltip" data-original-title="Votes"></span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span class="glyphicon glyphicon-tags" aria-hidden="true" data-toggle="tooltip" data-original-title="Tags"></span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span class="glyphicon glyphicon-bookmark" aria-hidden="true" data-toggle="tooltip" data-original-title="Badges"></span>
+                                    </div>
+                                    <div class="col-2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br><br>
+
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-12 col-lg-9">
+                            <div id="detail_pane">
+                            <div class="row">
+                                
+                                <font class="statistics_3">2 Questions</font>
+                                <br><br>
+                                <div class="container">
+                                    <div class="row question_panes" style="margin-left: 0.4%; margin-right: 0.4%">
+                                        <div class="col-xs-2 col-sm-2 col-md-2 hidden-lg" align="center" >
+                                            <div class="left_q">
+                                                <font class="statistics">7</font><br>
+                                                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" data-toggle="tooltip" data-original-title="Likes"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9" >
+
+                                            <div class="right_q">
+                                                Why does Barq's taste like sweetened Violini dfgdfgnfdkjg dfbgdfg etrhjghd?
+                                                <div class="tags">
+                                                    <a href="#"><span class="label label-warning">server</span>&nbsp;&nbsp;</a>
+                                                    <a href="#"><span class="label label-default">barq</span>&nbsp;&nbsp;</a>
+                                                    <a href="#"><span class="label label-default">wololo</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-3 visible-lg" >
+                                            <div id="stats_pane" class="container">
+                                                <div class="row">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-4" align="center">
+                                                                <font class="statistics">12</font><br>
+                                                            </div>
+                                                            <div class="col-4" align="center">
+                                                                <font class="statistics">17</font><br>
+                                                            </div>
+                                                            <div class="col-4" align="center">
+                                                                <font class="statistics">19</font><br>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-4" align="center">
+                                                                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" data-toggle="tooltip" data-original-title="Likes"></span>
+                                                            </div>
+                                                            <div class="col-4" align="center">
+                                                                <span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true" data-toggle="tooltip" data-original-title="Views"></span>
+                                                            </div>
+                                                            <div class="col-4" align="center">
+                                                                <span class="glyphicon glyphicon-pencil" aria-hidden="true" data-toggle="tooltip" data-original-title="Answers"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row question_panes" style="margin-left: 0.4%; margin-right: 0.4%">
+                                        <div class="col-xs-2 col-sm-2 col-md-2 hidden-lg" align="center" >
+                                            <div class="left_q">
+                                                <font class="statistics">7</font><br>
+                                                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" data-toggle="tooltip" data-original-title="Likes"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-9" >
+
+                                            <div class="right_q">
+                                                Why does Barq's taste like sweetened Violini dfgdfgnfdkjg dfbgdfg etrhjghd why does Barq's taste like sweetened Violini dfgdfgnfdkjg dfbgdfg etrhjghd why does Barq's taste like sweetened Violini dfgdfgnfdkjg dfbgdfg etrhjghd why does Barq's taste 
+                                                <div class="tags">
+                                                    <a href="#"><span class="label label-warning">server</span>&nbsp;&nbsp;</a>
+                                                    <a href="#"><span class="label label-default">barq</span>&nbsp;&nbsp;</a>
+                                                    <a href="#"><span class="label label-default">wololo</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-3 visible-lg">
+                                            <div id="stats_pane" class="container">
+                                                <div class="row">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-4" align="center">
+                                                                <font class="statistics">26</font><br>
+                                                            </div>
+                                                            <div class="col-4" align="center">
+                                                                <font class="statistics">17</font><br>
+                                                            </div>
+                                                            <div class="col-4" align="center">
+                                                                <font class="statistics">48</font><br>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-4" align="center">
+                                                                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" data-toggle="tooltip" data-original-title="Likes"></span>
+                                                            </div>
+                                                            <div class="col-4" align="center">
+                                                                <span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true" data-toggle="tooltip" data-original-title="Views"></span>
+                                                            </div>
+                                                            <div class="col-4" align="center">
+                                                                <span class="glyphicon glyphicon-pencil" aria-hidden="true" data-toggle="tooltip" data-original-title="Answers"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div> 
+
+                            </div> <!-- end -->
+                            <br>
+
+                            <div class="row">
+                                <font class="statistics_3">4 Answers</font>
+                                <br><br>
+                                <font class="normal"><a href="#"><span class="label label-default">1</span> &nbsp;Integer feugiat, nunc eu venenatis porttitor.</a></font>
+                                <br><font class="normal"><a href="#"><span class="label label-default">0</span> &nbsp;Nunc pellentesque purus at neque mattis consectetur.</a></font>
+                                <br><font class="normal"><a href="#"><span class="label label-default">0</span> &nbsp;Vivamus laoreet arcu vitae rhoncus tincidunt. Donec elementum turpis vitae sem feugiat tristique.</a></font>
+                                <br><font class="normal"><a href="#"><span class="label label-default">0</span> &nbsp;Nunc sollicitudin, velit ut ultrices congue, nisi magna laoreet enim, sit amet pretium turpis sem ut est.</a></font>
+                            </div>
+
+                            <br><br>
+                            <div class="row">
+                                <font class="statistics_3">2 Votes</font>
+                                <br><br>
+                                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" data-toggle="tooltip" data-original-title="Likes"></span><font class="statistics_2">2</font>&nbsp;&nbsp;
+                                <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true" data-toggle="tooltip" data-original-title="Likes"></span><font class="statistics_2">0</font>
+                            </div>
+
+                            <br><br>
+                            <div class="row">
+                                <font class="statistics_3">6 Tags</font>
+                                <br><br>
+                                <font class="tags"><a href="#"><span class="label label-default">wololo</span></a> x 5 </font>
+                                <font class="tags"><a href="#"><span class="label label-danger">askbot</span></a> x 12 </font>
+                                <font class="tags"><a href="#"><span class="label label-success">workshop</span></a> x 4 </font>
+                                <br>
+                                <font class="tags"><a href="#"><span class="label label-default">Vivamus</span></a> x 11 </font>
+                                <font class="tags"><a href="#"><span class="label label-default">rhoncus</span></a> x 9 </font>
+                                <font class="tags"><a href="#"><span class="label label-info">pellentesque</span></a> x 4 </font>
+                            </div>
+
+                            <br><br>
+                            <div class="row">
+                                <font class="statistics_3">4 Badges</font>
+                                <br><br>
+                                <font class="badges"><a href="#"><span class="label label-default">Nice Answer</span></a> x 2 </font>
+                                <font class="badges"><a href="#"><span class="label label-danger">Editor</span></a> x 3 </font>
+                                <br>
+                                <font class="badges"><a href="#"><span class="label label-warning">Critic</span></a> x 8 </font>
+                                <font class="badges"><a href="#"><span class="label label-info">Teacher</span></a> x 2 </font>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

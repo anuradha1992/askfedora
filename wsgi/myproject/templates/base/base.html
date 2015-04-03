@@ -33,6 +33,8 @@
         <!-- Custom JS -->
         <script src="{% static "includes/js/script.js" %}"></script>
 
+        {% block cssfiles %}{% endblock %}
+
     </head>
     <body>
 
@@ -80,7 +82,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <a href="#">Happy Panda</a>&nbsp;
+                                                <a href="userpage">Happy Panda</a>&nbsp;
                                                 <img src="{% static "images/panda.png" %}" class="img-circle" alt="panda" height="30" width="30">
                                             </td>
                                         </tr>
